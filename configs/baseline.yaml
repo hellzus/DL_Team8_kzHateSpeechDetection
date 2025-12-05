@@ -1,0 +1,21 @@
+data:
+  dataset_path: "src/data/hate_dataset.csv"
+  text_column: "text"
+  label_column: "label"
+  batch_size: 64
+  max_features: 30000
+  ngram_min: 1
+  ngram_max: 2
+  val_size: 0.1
+  test_size: 0.1
+  random_state: 42
+
+model:
+  hidden1: 256
+  hidden2: 128
+  dropout: 0.3
+
+training:
+  num_epochs: 50
+  learning_rate: 0.001
+  seed: 42
